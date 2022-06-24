@@ -1,0 +1,63 @@
+.upload__box{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    background-color: #f9f9f9;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+
+    &--sub{
+        display: flex;
+        height: 3rem;
+        border: 1px solid red;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color-grey-dark;
+        transition: all .5s;
+        &:hover{
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    }
+
+    .upload__img{
+        width: 2rem;
+        height: 2rem;
+        &--text{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.main__left{
+    width: 20%;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+
+.main__right{
+    width: 80%;
+    display: flex;
+    font-size: 1.5rem;
+
+    .main__right--section--left{
+        margin-right: 3rem;
+    }
+
+    .main__right--section--right{
+        
+    }
+
+    input{
+        font-size: 3rem;
+        margin-right: 1rem;
+        width: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea{
+       resize: none;
+    }
+}

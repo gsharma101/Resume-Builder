@@ -83,4 +83,64 @@ body {
   color: white; }
 
 #save {
-  background-color: #008392; }
+  background-color: #008392;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 5px;
+  border: none; }
+  #save:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+
+.upload__box {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  background-color: #f9f9f9;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center; }
+  .upload__box--sub {
+    display: flex;
+    height: 3rem;
+    border: 1px solid red;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(119, 119, 119, 0.281);
+    transition: all .5s; }
+    .upload__box--sub:hover {
+      border: 1px solid black;
+      cursor: pointer; }
+  .upload__box .upload__img {
+    width: 2rem;
+    height: 2rem; }
+    .upload__box .upload__img--text {
+      font-size: 1.5rem; }
+
+.main__left {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main__right {
+  width: 80%;
+  display: flex;
+  font-size: 1.5rem; }
+  .main__right .main__right--section--left {
+    margin-right: 3rem; }
+  .main__right input {
+    font-size: 3rem;
+    margin-right: 1rem;
+    width: 50rem;
+    margin-bottom: 2rem; }
+  .main__right textarea {
+    resize: none; }
+
+main {
+  display: flex;
+  padding: 5rem;
+  margin-bottom: 2rem; }

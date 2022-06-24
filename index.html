@@ -21,7 +21,35 @@
   </nav>
 <!-- ? Main Beggins -->
   <main>
+    <div class="main__left">
+      <div class="upload__box">
+        <div class="upload__box--sub">
+          <img src="images/UploadOutlined.svg" class="upload__img" alt="upload">
+         <label for="profile" class="upload__img--text">Upload Profile</label>
+         <input type="file" name="profile" id="profile" hidden>
+        </div>
+      </div>
+    </div>
 
+    <div class="main__right">
+        <div class="main__right--section--left">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="name">Email ID</label><br>
+            <input type="email" name="email" id="email"><br>
+            <button type="submit" id="save">Save</button>
+        </div>
+        <div class="main__right--section--right">
+          <label for="name">Short Bio</label><br>
+          <textarea name="bio" id="bio" cols="70" rows="8"></textarea>
+        </div>
+    </div>
   </main>
+
+  <section class="resume__data"> 
+    <h2>Education</h2>
+    <h2>Work Experience</h2>
+    <h2>Achivements</h2>
+  </section>
 </body>
 </html>

@@ -23,4 +23,14 @@
 
 #save{
     background-color: $btn-save;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    &:hover{
+        @include defaultShadow;
+        cursor: pointer;
+    }
 }
