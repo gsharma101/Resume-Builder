@@ -1,0 +1,26 @@
+.nav__btn{
+    font-size: 1.5rem;
+    padding: .5rem 1rem; 
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .5s;
+    &:hover{
+        cursor: pointer;
+        @include defaultShadow;
+    }
+}
+
+#import{
+    background-color: white;
+    color: black;
+}
+
+#export{
+    background-color: $color-btn-red;
+    color: white;
+}
+
+#save{
+    background-color: $btn-save;
+}

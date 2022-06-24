@@ -1,0 +1,27 @@
+.nevigation{
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-dark-2;
+
+    &__logo--box{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__image{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__logo{
+        font-size: 2rem;
+        color: $color-new;
+        font-weight: 500;
+    }
+
+    .btn__box{
+        display: flex;
+    }
+}
