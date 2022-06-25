@@ -1,3 +1,18 @@
+.add__btn{
+    font-size: 2rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid $color-grey-dark-2;
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    &:hover{
+        cursor: pointer;
+        background-color: $color-grey-dark;
+    }
+}
+
 .nav__btn{
     font-size: 1.5rem;
     padding: .5rem 1rem; 
@@ -21,7 +36,7 @@
     color: white;
 }
 
-#save{
+#savebtn{
     background-color: $btn-save;
     font-size: 1.5rem;
     padding: 1rem;

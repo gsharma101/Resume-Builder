@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Resume</title>
-</head>
-<body>
-  <nav class="nevigation">
-    <div class="nevigation__logo--box">
-      <img src="images/ClipboardOutlined.svg" class="logo__image" alt="resume"> <span class="nevigation__logo">Resume Builder</span>
-    </div>
-
-   <div class="btn__box">  
-    <button class="nav__btn" id="import">Import</button>
-    <button class="nav__btn" id="export">Export</button>
-   </div>
-
-  </nav>
-<!-- ? Main Beggins -->
-  <main>
-    <div class="main__left">
-      <div class="upload__box">
-        <div class="upload__box--sub">
-          <img src="images/UploadOutlined.svg" class="upload__img" alt="upload">
-         <label for="profile" class="upload__img--text">Upload Profile</label>
-         <input type="file" name="profile" id="profile" hidden>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="eventHappening">
+      <div class="affecting__data">
+        <h1>Data Affected</h1>
       </div>
     </div>
+    <nav class="nevigation">
+      <div class="nevigation__logo--box">
+        <img
+          src="images/ClipboardOutlined.svg"
+          class="logo__image"
+          alt="resume"
+        />
+        <span class="nevigation__logo">Resume Builder</span>
+      </div>
 
-    <div class="main__right">
+      <div class="btn__box">
+        <button class="nav__btn" id="import">Import</button>
+        <button class="nav__btn" id="export">Export</button>
+      </div>
+    </nav>
+    <!-- ? Main Beggins -->
+    <main>
+      <div class="main__left">
+        <div class="upload__box">
+          <div class="upload__box--sub">
+            <img
+              src="images/UploadOutlined.svg"
+              class="upload__img"
+              alt="upload"
+            />
+            <label for="profile" class="upload__img--text"
+              >Upload Profile</label
+            >
+            <input type="file" name="profile" id="profile" hidden />
+          </div>
+        </div>
+      </div>
+
+      <div class="main__right">
         <div class="main__right--section--left">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name"><br>
-            <label for="name">Email ID</label><br>
-            <input type="email" name="email" id="email"><br>
-            <button type="submit" id="save">Save</button>
+          <label for="name">Name</label><br />
+          <input type="text" name="userName" id="userName" required/><br />
+          <label for="name">Email ID</label><br />
+          <input type="email" name="email" id="email" required/><br />
+          <button type="submit" id="savebtn">Save</button>
         </div>
         <div class="main__right--section--right">
-          <label for="name">Short Bio</label><br>
+          <label for="name">Short Bio</label><br />
           <textarea name="bio" id="bio" cols="70" rows="8"></textarea>
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <section class="resume__data"> 
-    <h2>Education</h2>
-    <h2>Work Experience</h2>
-    <h2>Achivements</h2>
-  </section>
-</body>
+    <section class="resumeData">
+      <div class="resumeData__elements">
+        <button class="resumebtn">Education <span>(2)</span> </button>
+        <button class="resumebtn">Work Experience <span>(2)</span> </button>
+        <button class="resumebtn">Achivements <span>(2)</span> </button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <button class="add__btn">Add New</button>
+      </div>
+    </section>
+    <section class="data"> 
+      <div>
+
+      </div>
+    </section>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="js/formData.js"></script>
 </html>
